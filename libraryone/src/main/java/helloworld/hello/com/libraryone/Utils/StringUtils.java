@@ -4,20 +4,11 @@ import android.annotation.SuppressLint;
 import android.app.ActivityManager;
 import android.content.ComponentName;
 import android.content.Context;
-import android.text.Html;
-import android.text.Spannable;
-import android.text.SpannableString;
-import android.text.SpannableStringBuilder;
 import android.text.TextPaint;
-import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
-import android.text.style.ForegroundColorSpan;
-import android.text.style.URLSpan;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-
-import com.hello.overseas.R;
 
 import java.net.Inet6Address;
 import java.net.InetAddress;
@@ -1045,7 +1036,7 @@ public class StringUtils {
     }
 
     public static void BeCommentUser(String test, String userId, TextView tv, Context mContext){
-        String htmlLinkText = "";
+    /*    String htmlLinkText = "";
         int begin = test.indexOf("#");
         String next =test.substring(3,test.length());
         int endL = next.indexOf("#");
@@ -1070,7 +1061,7 @@ public class StringUtils {
                 style.setSpan(myURLSpan,sp.getSpanStart(url),sp.getSpanEnd(url),Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
             }
             tv.setText(sp);
-        }
+        }*/
     }
 
     static class CommentURLSpan extends ClickableSpan {
